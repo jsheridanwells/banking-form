@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Banking Form</title>
+		<style>
+			* {
+				font-family: Arial, sans-serif;
+			}
+			.container {
+				width: 60%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form action="index.html" method="post">
+
+				<fieldset>
+					<legend>Basic Information:</legend>
+					<label for="first-name">First Name:</label>
+					<input type="text" id="first-name" name="first-name"><br>
+					<label for="mi">MI:</label>
+					<input type="text" id="mi" name="mi"><br>
+					<label for="last-name">Last Name:</label>
+					<input type="text" id="last-name" name="last-name"><br>
+					<label for="address">Address:</label>
+					<input type="text" id="address" name="address"><br>
+					<label for="occupation">Occupation:</label>
+					<input type="text" id="occupation" name="occupation"><br>
+					<label for="employer">Employer:</label>
+					<input type="text" id="employer" name="employer"><br>
+					<label for="employer-address">Employer Address:</label>
+					<input type="text" id="employer-address" name="employer-address">
+				</fieldset>
+
+				<fieldset>
+					<legend>Loan Information:</legend>
+
+					<label for="loan-type">Type of Loan:</label>
+					<select id="loan-type" ane="loan-type">
+						<option value="commercial">Commercial</option>
+						<option value="real-estate">Real Estate</option>
+						<option value="personal">Personal</option>
+						<option value="mortgage">Mortgage</option>
+					</select><br>
+
+					<label for="amount">Requested Amount: $</label>
+					<input type="number" id="amount" name="amount" placeholder="0.00"><br>
+
+					<label>Loan Length:</label><br>
+					<input type="radio" id="years5" name="loan-length" value="years5">
+					<label for="">5 Years</label>
+					<input type="radio" id="years15" name="loan-length" value="years15">
+					<label for="">15 Years</label>
+					<input type="radio" id="years30" name="loan-length" value="years30">
+					<label for="">30 years</label><br>
+
+					<label>Special Conditions:</label><br>
+					<input type="checkbox" id="down-payment" value="down-payment" name="down-payment">
+					<label for="down-payment">I have a down payment</label><br>
+					<input type="checkbox" id="out-of-state" value="out-of-state" name="out-of-state">
+					<label for="out-of-state">I live out-of-state</label><br>
+					<input type="checkbox" id="married" value="married" name="married">
+					<label for="married">I am married</label><br>
+					<input type="checkbox" id="co-signed" value="co-signed" name="co-signed">
+					<label for="co-signedt">I have a co-signer</label><br>
+
+				</fieldset>
+
+				<fieldset>
+					<legend>Additional Information:</legend>
+
+					<label for="comments">Additional Comments:</label><br>
+					<textarea id="comments" name="comments"></textarea><br>
+					<label for="email">Email:</label>
+					<input type="text" id="email" name="email"><br>
+					<label for="employer-address">Telephone:</label>
+					<input type="text" id="telephone" name="telephone"><br>
+					<label for="linked-in">LinkedIn:</label>
+					<input type="text" id="linked-in" name="linked-in">
+
+				</fieldset>
+
+			</form>
+		</div>
+	</body>
+</html>
